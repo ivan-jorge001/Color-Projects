@@ -1,0 +1,26 @@
+<center>
+    <h2 class="row">
+  Colors
+</h2></center>
+
+
+    <% colors.forEach((colors)=>{%>
+      <% if (colors.category === 'pink') {%>
+
+
+        <div class='col-md-4 colorbox'>
+
+            <div class='row color-container' style="background-color: <%=colors.keyword%>">
+
+
+            </div>
+            <div class="row desc" style="background-color: white">
+                <%= colors.name%> <br>
+                    Hex: <%= colors.hex%> <br>
+                    Category: <%= colors.category%>
+            </div>
+        </div>
+
+
+<%}%>
+        <%});%>

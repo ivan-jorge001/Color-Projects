@@ -1,0 +1,22 @@
+<center>
+    <h2 class="row">
+  Color categories
+</h2></center>
+
+    <% cate.forEach((colors)=>{%>
+
+        <div class='col-md-4 colorbox'>
+            <div class='row color-container' style="background-color: <%=colors%>">
+
+
+            </div>
+            <div class="row desc" style="background-color: white">
+                <%= colors%> <br>
+                <a class = "btn" href = "/<%=colors%>"> See more </a>
+
+            </div>
+        </div>
+
+
+
+        <%});%>

@@ -1,0 +1,22 @@
+<center>
+    <h2 class="row">
+  Random Color
+</h2></center>
+
+
+
+
+
+        <div class='col-md-4 colorbox'>
+            <div class='row color-container' style="background-color: <%=colors[randomColor].keyword%>">
+
+
+            </div>
+            <div class="row desc" style="background-color: white">
+              <%= colors[randomColor].name%> <br>
+                  Hex: <%= colors[randomColor].hex%> <br>
+                  Category: <%= colors[randomColor].category%>
+                  <a class = "btn" href = "/rand"> Change Color </a>
+
+            </div>
+        </div>
